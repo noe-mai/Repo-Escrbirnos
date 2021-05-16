@@ -1,31 +1,65 @@
-html {
-  width: 100%;
-  height: auto;
-}
 .contenedor {
   width: 100%;
   height: auto;
-  background-color: #f4bcc9;
+  background-color: #ffe4d0;
 }
-.ladoa {
-  width: 100%;
-  margin: 0 auto;
-}
-.sidebar {
-  width: 40%;
-  height: 300px;
-  text-align: left;
-  position: relative;
-  top: 200px;
-  background-size: cover;
-}
-.encabezado {
-  text-align: left;
-  position: relative;
-  left: 30px;
-  width: 40%;
 
-  padding: 60px 10px;
+.write-us {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(94, 65, 29);
+}
+
+/* Aca comienzan las formitas */
+
+.Formas {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.rojo {
+  background-color: rgba(255, 0, 0, 0.849);
+  height: 600px;
+  width: 60px;
+  transform: rotate(40deg);
+  transform-origin: 10em 30em;
+}
+
+.verde {
+  background-color: rgba(46, 139, 86, 0.781);
+  height: 60vh;
+  width: 30vw;
+  border-radius: 50%;
+  margin-top: 100px;
+  position: relative;
+  left: 40px;
+}
+.naranja {
+  background-color: rgba(226, 159, 14, 0.815);
+  height: 200px;
+  width: 500px;
+  margin-top: 300px;
+  position: relative;
+  left: -50px;
+}
+.amarillo {
+  background-color: yellow;
+  height: 500px;
+  width: 100px;
+}
+.violeta {
+  background-color: rgb(190, 10, 151);
+  height: 300px;
+  width: 80px;
+}
+
+/* Aca el encabezado y el nav */
+
+.encabezado {
+  display: flex;
+  flex-direction: row;
 }
 
 ul {
@@ -35,7 +69,7 @@ ul {
 li {
   font: Raleway;
   font-family: sans-serif;
-  padding-top: 20px;
+  color: #ffffff;
 }
 
 a {
@@ -44,32 +78,6 @@ a {
   font-size: 25px;
 }
 
-.escribirnos {
-  width: 100%;
-  position: absolute;
-  top: 800px;
-  background-color: rgba(153, 18, 18, 0.1);
-  padding-left: 30px;
-  font-size: 40px;
-}
-
-.image {
-  max-width: 100%;
-  height: 100vh;
-  background-image: url("image/imagerosa.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #f4bcc9;
-}
-
-.paraque {
-  width: 100%;
-  height: 100vh;
-  background-image: url("image/thought-catalog-FACFpJVoMJs-unsplash\ \(1\).jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .entradas {
   width: 100%;
   height: 100vh;
