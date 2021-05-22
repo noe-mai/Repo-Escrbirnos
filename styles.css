@@ -6,18 +6,43 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .contenedor {
   width: 100%;
   height: auto;
   background-color: #ffe4d0;
 }
 
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.write-us {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+
+  color: #fefeff;
+  font-size: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+
+  z-index: 1;
+}
+
 /* Aca comienzan las formitas */
 
-.Formas {
+.formas {
+  display: flex;
   width: 100vw;
   height: auto;
-  display: flex;
+  padding-top: 80px;
   flex-direction: row;
   justify-content: center;
 }
@@ -31,19 +56,22 @@
 }
 
 .verde {
-  background-color: rgba(46, 139, 86, 0.781);
-  height: 60vh;
-  width: 30vw;
-  border-radius: 50%;
-  margin-top: 100px;
   position: relative;
+  height: 560px;
+  width: 560px;
   left: 40px;
+  margin-top: 100px;
+
+  border-radius: 50%;
+  background-color: rgba(46, 139, 86, 0.781);
+
   animation-name: verde;
   animation-duration: 4s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+
 .naranja {
   background-color: rgba(226, 159, 14, 0.815);
   height: 200px;
@@ -51,23 +79,26 @@
   margin-top: 300px;
   position: relative;
   left: -50px;
-  animation-name: naranja;
+  /* animation-name: naranja; */
   animation-duration: 2s;
   animation-direction: alternate;
   /*animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;*/
 }
+
 .amarillo {
   background-color: yellow;
   height: 500px;
   width: 100px;
   margin-right: 3vw;
 }
+
 .violeta {
   background-color: rgb(190, 10, 151);
   height: 300px;
   width: 80px;
 }
+
 @keyframes verde {
   from {
     left: 0px;
@@ -92,18 +123,18 @@
 /* Header */
 
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  z-index: 2;
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  margin-left: auto;
   padding-top: 3vh;
   font-size: 20px;
 }
@@ -130,50 +161,22 @@ li {
   border-bottom: 1px solid #ddcfc5ab;
 }
 
-.write-us {
-  text-align: center;
-  font-size: 100px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  color: #fefeff;
-}
-
 /* Entradas */
 
-#entradas {
+.entradas {
+  display: flex;
   width: 100%;
   height: 100vh;
-  display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   margin: auto;
 }
 
-.entradaa {
+.entradas article {
   width: 20%;
   height: 40%;
-  background-color: rgb(248, 241, 248);
-  border: solid #333 2px;
-  border-radius: 20px;
-}
-.entradab {
-  width: 20%;
-  height: 40%;
-  background-color: rgb(248, 241, 248);
-  border: solid #333 2px;
-  border-radius: 20px;
-}
-.entradac {
-  width: 20%;
-  height: 40%;
-  background-color: rgb(248, 241, 248);
-  border: solid #333 2px;
-  border-radius: 20px;
-}
-.entradad {
-  width: 20%;
-  height: 40%;
+
   background-color: rgb(248, 241, 248);
   border: solid #333 2px;
   border-radius: 20px;
@@ -183,11 +186,60 @@ h2 {
   text-align: center;
   padding: auto;
 }
-#recomendame {
+
+.box {
+  display: flex;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-color: #5dc09f;
 }
+
+.box-title {
+  font-size: 3em;
+}
+
+.box > div {
+  width: 50%;
+}
+
+.box .text {
+  color: #f5ccae88;
+  padding: 60px;
+}
+
+.box .image {
+  display: flex;
+  justify-content: center;
+}
+
+.box .image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.btn {
+  display: inline-block;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.btn-green {
+  border-color: #f5ccae88;
+  background-color: #5dc09f;
+}
+
+.btn-transparent {
+  border-color: #f5ccae88;
+  background-color: purple;
+}
+
+.btn-large {
+  height: 60px;
+}
+
 footer {
   width: 100%;
   height: 100vh;
