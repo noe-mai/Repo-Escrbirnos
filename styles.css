@@ -21,16 +21,16 @@
   flex-direction: row;
   justify-content: center;
 }
-.rojo {
+.red {
   background-color: rgba(255, 0, 0, 0.849);
   height: 600px;
   width: 90px;
   transform: rotate(40deg);
   transform-origin: 10em 30em;
-  animation-name: rojo;
+  animation-name: red;
 }
 
-.verde {
+.green {
   background-color: rgba(46, 139, 86, 0.781);
   height: 60vh;
   width: 30vw;
@@ -38,37 +38,37 @@
   margin-top: 100px;
   position: relative;
   left: 40px;
-  animation-name: verde;
+  animation-name: green;
   animation-duration: 4s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.naranja {
+.orange {
   background-color: rgba(226, 159, 14, 0.815);
   height: 200px;
   width: 500px;
   margin-top: 300px;
   position: relative;
   left: -50px;
-  animation-name: naranja;
+  animation-name: orange;
   animation-duration: 2s;
   animation-direction: alternate;
   /*animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;*/
 }
-.amarillo {
+.yellow {
   background-color: yellow;
   height: 500px;
   width: 100px;
   margin-right: 3vw;
 }
-.violeta {
+.purple {
   background-color: rgb(190, 10, 151);
   height: 300px;
   width: 80px;
 }
-@keyframes verde {
+@keyframes green {
   from {
     left: 0px;
   }
@@ -76,7 +76,7 @@
     left: 500px;
   }
 }
-@keyframes naranja {
+@keyframes orange {
   from {
     background-color: rgba(226, 159, 14, 0.815);
     width: 500px;
