@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.contenedor {
+.container {
   width: 100%;
   height: auto;
   background-color: #ffe4d0;
@@ -55,84 +55,51 @@ html {
   animation-name: red;
 }
 
-<<<<<<< HEAD
 .green {
-  background-color: rgba(46, 139, 86, 0.781);
-  height: 60vh;
-  width: 30vw;
-  border-radius: 50%;
-  margin-top: 100px;
-=======
-.verde {
->>>>>>> d07a3a5a70b38a113ad21f82b360b9eb122c669a
   position: relative;
   height: 560px;
   width: 560px;
   left: 40px;
-<<<<<<< HEAD
-  animation-name: green;
-=======
   margin-top: 100px;
 
   border-radius: 50%;
   background-color: rgba(46, 139, 86, 0.781);
 
-  animation-name: verde;
->>>>>>> d07a3a5a70b38a113ad21f82b360b9eb122c669a
+  animation-name: green;
   animation-duration: 4s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-<<<<<<< HEAD
-.orange {
-=======
 
-.naranja {
->>>>>>> d07a3a5a70b38a113ad21f82b360b9eb122c669a
+.orange {
   background-color: rgba(226, 159, 14, 0.815);
   height: 200px;
   width: 500px;
   margin-top: 300px;
   position: relative;
   left: -50px;
-<<<<<<< HEAD
-  animation-name: orange;
-=======
   /* animation-name: naranja; */
->>>>>>> d07a3a5a70b38a113ad21f82b360b9eb122c669a
   animation-duration: 2s;
   animation-direction: alternate;
   /*animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;*/
 }
-<<<<<<< HEAD
-.yellow {
-=======
 
-.amarillo {
->>>>>>> d07a3a5a70b38a113ad21f82b360b9eb122c669a
+.yellow {
   background-color: yellow;
   height: 500px;
   width: 100px;
   margin-right: 3vw;
 }
-<<<<<<< HEAD
-.purple {
-=======
 
-.violeta {
->>>>>>> d07a3a5a70b38a113ad21f82b360b9eb122c669a
+.purple {
   background-color: rgb(190, 10, 151);
   height: 300px;
   width: 80px;
 }
-<<<<<<< HEAD
-@keyframes green {
-=======
 
 @keyframes verde {
->>>>>>> d07a3a5a70b38a113ad21f82b360b9eb122c669a
   from {
     left: 0px;
   }
