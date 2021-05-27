@@ -13,7 +13,7 @@ html {
 .contenedor {
   width: 100%;
   height: auto;
-  background-color: #ffe4d0;
+  background-color: #ffffff;
 }
 
 .hero {
@@ -25,12 +25,12 @@ html {
 
 .write-us {
   position: absolute;
-  top: 20%;
-  left: 60%;
+  top: 25%;
+  left: 40%;
 
   color: #010113;
   font-size: 100px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Righteous", cursive;
   font-weight: bold;
   text-align: center;
 
@@ -53,17 +53,17 @@ html {
   animation-name: red;
 }
 
-.green {
+.blue {
   display: flex;
-  height: 560px;
-  width: 560px;
+  height: 500px;
+  width: 500px;
   left: 40px;
   margin-top: 100px;
 
   border-radius: 50%;
-  background-color: rgba(46, 139, 86, 0.781);
+  background-color: #357db2;
 
-  animation-name: green;
+  animation-name: circle-blue;
   animation-duration: 4s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
@@ -71,9 +71,10 @@ html {
 }
 
 .orange {
-  background-color: rgba(226, 159, 14, 0.815);
-  height: 200px;
+  background-color: rgb(8, 6, 0);
+  height: 20px;
   width: 500px;
+
   margin-top: 300px;
   position: relative;
   left: -50px;
@@ -81,7 +82,7 @@ html {
 
 .yellow {
   position: relative;
-  background-color: yellow;
+  background-color: #efcb27;
   height: 500px;
   width: 100px;
   margin-right: 3vw;
@@ -95,22 +96,12 @@ html {
   margin-right: 10vw;
 }
 
-@keyframes green {
+@keyframes circle-blue {
   from {
     left: 0px;
   }
   to {
     left: 500px;
-  }
-}
-@keyframes orange {
-  from {
-    background-color: rgba(226, 159, 14, 0.815);
-    width: 500px;
-  }
-  to {
-    background-color: coral;
-    width: 700px;
   }
 }
 
@@ -163,6 +154,7 @@ li {
   display: flex;
   width: 100%;
   height: 100vh;
+  background-color: #eae6d9;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -189,7 +181,7 @@ h2 {
   justify-content: center;
   width: 100%;
   height: 90vh;
-  background-color: #ffe4d0;
+  background-color: #ffffff;
 }
 
 .box-title {
@@ -248,6 +240,6 @@ h2 {
 
 footer {
   width: 100%;
-  height: 100vh;
-  background-color: #231e21;
+  height: 90vh;
+  background-color: #eae6d9;
 }
