@@ -10,16 +10,17 @@ html {
   scroll-behavior: smooth;
 }
 
-.container {
+.contenedor {
   width: 100%;
   height: auto;
   background-color: #ffe4d0;
 }
 
 .hero {
-  position: relative;
+  display: flex;
   width: 100%;
-  height: 80vh;
+  height: 80%;
+  margin: 0 auto;
 }
 
 .write-us {
@@ -27,7 +28,7 @@ html {
   top: 20%;
   left: 60%;
 
-  color: #fefeff;
+  color: #010113;
   font-size: 100px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -37,14 +38,11 @@ html {
 }
 
 /* Aca comienzan las formitas */
-
 .formas {
   display: flex;
-  width: 100vw;
-  height: auto;
-  padding-top: 80px;
+  width: 100%;
+  height: 100%;
   flex-direction: row;
-  justify-content: center;
 }
 .red {
   background-color: rgba(255, 0, 0, 0.849);
@@ -56,7 +54,7 @@ html {
 }
 
 .green {
-  position: relative;
+  display: flex;
   height: 560px;
   width: 560px;
   left: 40px;
@@ -79,14 +77,10 @@ html {
   margin-top: 300px;
   position: relative;
   left: -50px;
-  /* animation-name: naranja; */
-  animation-duration: 2s;
-  animation-direction: alternate;
-  /*animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;*/
 }
 
 .yellow {
+  position: relative;
   background-color: yellow;
   height: 500px;
   width: 100px;
@@ -94,12 +88,14 @@ html {
 }
 
 .purple {
-  background-color: rgb(190, 10, 151);
-  height: 300px;
-  width: 80px;
+  position: relative;
+  background-color: rgb(135, 18, 158);
+  height: 10px;
+  width: 200px;
+  margin-right: 10vw;
 }
 
-@keyframes verde {
+@keyframes green {
   from {
     left: 0px;
   }
@@ -189,9 +185,11 @@ h2 {
 
 .box {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 90vh;
-  background-color: #5dc09f;
+  background-color: #ffe4d0;
 }
 
 .box-title {
@@ -203,18 +201,21 @@ h2 {
 }
 
 .box .text {
-  color: #f5ccae88;
+  color: #0f080288;
   padding: 60px;
 }
 
 .box .image {
   display: flex;
+  text-align: center;
   justify-content: center;
 }
 
 .box .image img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 40%;
+  max-height: 40%;
+  border-radius: 5%;
+  margin: 0 auto;
 }
 
 .btn {
@@ -226,19 +227,24 @@ h2 {
   border-style: solid;
 }
 
+/*
 .btn-green {
   border-color: #f5ccae88;
-  background-color: #5dc09f;
+  background-color: #4d685f;
 }
+
+*/
 
 .btn-transparent {
   border-color: #f5ccae88;
-  background-color: purple;
+  background-color: rgba(240, 166, 240, 0.404);
 }
 
+/*
 .btn-large {
   height: 60px;
 }
+*/
 
 footer {
   width: 100%;
