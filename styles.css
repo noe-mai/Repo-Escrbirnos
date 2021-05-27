@@ -150,30 +150,55 @@ li {
 
 /* Entradas */
 
-.entradas {
+.posts {
   display: flex;
-  width: 100%;
+
+  justify-content: center;
+  width: 100vw;
   height: 100vh;
   background-color: #eae6d9;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin: auto;
+
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.entradas article {
-  width: 20%;
-  height: 40%;
+.post-top {
+  width: 100%;
+  height: 50%;
+}
 
-  background-color: rgb(248, 241, 248);
-  border: solid #333 2px;
-  border-radius: 20px;
+.post-bottom {
+  width: 100%;
+  height: 50%;
+}
+
+.post-top article {
+  width: 20vw;
+  height: 20vh;
+
+  background-color: rgb(240, 6, 6);
+  border: solid #333 10px;
+}
+
+
+.post-bottom article {
+  width: 20vw;
+  height: 20vh;
+
+  background-color: rgb(57, 6, 240);
+  border: solid #333 10px;
 }
 
 h2 {
   text-align: center;
   padding: auto;
 }
+
+
+/*
+Aca comienza la seccion de recomendame
+*/ 
+
 
 .box {
   display: flex;
@@ -242,4 +267,15 @@ footer {
   width: 100%;
   height: 90vh;
   background-color: #eae6d9;
+}
+
+.shapes-footer {
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+img {
+  width: 50%;
+  height: 100%;
 }
