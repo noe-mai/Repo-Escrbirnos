@@ -264,7 +264,7 @@ Aca comienza la seccion de recomendame
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 
   background: rgb(234, 230, 217);
   background: linear-gradient(
@@ -276,46 +276,38 @@ Aca comienza la seccion de recomendame
 
 .box-title {
   color: #292930;
-  font-size: 50px;
+  font-size: 6em;
   font-family: "Righteous", cursive;
   font-weight: bold;
   text-align: center;
+
+  padding-top: 10vh;
 }
 
 #box > div {
-  width: 50%;
-}
-
-#box .text {
-  color: #0f080288;
-  padding: 60px;
-}
-
-#box figure {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-
-#box figure img {
-  max-width: 40%;
-  max-height: 40%;
-  border-radius: 5%;
+  width: 80%;
   margin: 0 auto;
 }
 
+
 .btn {
   display: inline-block;
-  height: 40px;
-  padding: 0 20px;
+  padding: 0 50px;
   border-radius: 20px;
   border-width: 3px;
   border-style: solid;
 }
 
-.btn-transparent {
-  border-color: #f5ccae88;
-  background-color: rgba(240, 166, 240, 0.404);
+.btn-large {
+
+  font-size: 2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ee17ee;
+  margin: 0 auto;
+
+  
+
+
 }
 
 footer {
