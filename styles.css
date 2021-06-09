@@ -309,9 +309,11 @@ Aca comienza la seccion de recomendame
   margin-top: 10vh;
 }
 
+/* Aca comienza el footer */
+
 footer {
-  width: 100%;
-  height: 90vh;
+  width: 100vw;
+  height: 100vh;
 
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -321,13 +323,27 @@ footer {
   );
 }
 
+.container-footer {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-icons i {
+  font-size: 70px;
+  color: #292930;
+  padding-right: 20px;
+
+}
+
+.footer-contact {
+}
+
 .shapes-footer {
   display: flex;
 
   justify-content: flex-end;
   align-items: flex-end;
-}
-img {
-  width: 50%;
-  height: 100%;
 }
