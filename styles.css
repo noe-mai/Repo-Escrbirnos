@@ -127,6 +127,17 @@ nav {
   display: flex;
   flex-direction: row;
 }
+#burger-menu-toggler {
+  display: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: #f3f3f3;
+  font-size: 20px;
+  margin-right: 5vw;
+  z-index: 2;
+}
 
 li {
   font-family: "Montserrat", sans-serif;
@@ -335,7 +346,6 @@ footer {
   font-size: 70px;
   color: #292930;
   padding-right: 20px;
-
 }
 
 .footer-contact {
@@ -346,4 +356,51 @@ footer {
 
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+/*aca comienza lo responsive */
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 768px) {
+  section#entradas,
+  section#recomendame {
+    padding: 20vw 10vw;
+  }
+
+  section#entradas {
+    flex-direction: column;
+  }
+
+  ul.menu {
+    display: none;
+  }
+
+  #close-mobile-menu {
+    display: none;
+  }
+
+  body.mobile-menu-active {
+    overflow: hidden;
+  }
+
+  body.mobile-menu-active #open-mobile-menu {
+    display: none;
+  }
+  body.mobile-menu-active #close-mobile-menu {
+    display: block;
+  }
+  body.mobile-menu-active .main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+  }
 }

@@ -20,10 +20,15 @@
     <div class="container">
       <header>
         <nav>
+          <button id="burger-menu-toggler">
+            <i class="fas fa-bars" id="open-mobile-menu"></i>
+            <i class="fas fa-times" id="close-mobile-menu"></i>
+          </button>
           <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#posts">Entradas</a></li>
-            <li><a href="#box">Recomendame</a></li>
+            <li class="menu-item active"><a href="#">Home</a></li>
+            <li class="menu-item"><a href="#posts">Entradas</a></li>
+            <li class="menu-item"><a href="#box">Recomendame</a></li>
+            <li class="menu-item active"><a href="#">Login</a></li>
           </ul>
         </nav>
       </header>
@@ -44,21 +49,27 @@
           <article class="post-a">
             <a href="#"> <h2>POST</h2></a>
           </article>
+
           <article class="post-b">
             <a href="#"> <h2>POST</h2></a>
           </article>
+
           <article class="post-c">
             <a href="#"> <h2>POST</h2></a>
           </article>
+
           <article class="post-d">
             <a href="#"> <h2>POST</h2></a>
           </article>
+
           <article class="post-e">
             <a href="#"> <h2>POST</h2></a>
           </article>
+
           <article class="post-f">
             <a href="#"> <h2>POST</h2></a>
           </article>
+
           <article class="post-g">
             <a href="#"> <h2>POST</h2></a>
           </article>
@@ -94,6 +105,9 @@
           <a href="https://discord.com/" target="_blank">
             <i class="fab fa-discord"></i>
           </a>
+          <a href="https://www.twitch.tv/">
+            <i class="fab fa-twitch"></i>
+          </a>
           <a href="https://medium.com/" target="_blank">
             <i class="fab fa-medium"></i>
           </a>
@@ -102,7 +116,10 @@
           </a>
         </div>
         <div class="footer-mailing">
-          <h5>Queres recibir novedades del sitio?</h5>
+          <h3>Queres recibir novedades del sitio?</h3>
+          <p>
+            Dejanos tu correo y recibis un resumen semanal con las novedades
+          </p>
           <form action="">
             <label for="">
               <input type="text" />
@@ -115,6 +132,8 @@
           <div class="yellow-square"></div>
         </div>
       </div>
+      Hecho por WRITE-US con 💗 y ☕
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
