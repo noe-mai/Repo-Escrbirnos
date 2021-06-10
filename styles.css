@@ -351,12 +351,6 @@ footer {
   padding-right: 20px;
 }
 
-.shapes-footer {
-  display: flex;
-
-  justify-content: flex-end;
-  align-items: flex-end;
-}
 
 footer > p {
   text-align: center;
