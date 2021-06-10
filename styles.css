@@ -133,7 +133,7 @@ nav {
   border: 0;
   outline: 0;
   cursor: pointer;
-  color: #9b3838;
+  color: rgba(255, 0, 0, 0.849);
   font-size: 20px;
   margin-right: 5vw;
   z-index: 2;
@@ -144,7 +144,7 @@ li {
 }
 
 .menu a {
-  color: rgb(41, 39, 39);
+  color: #292930;
   text-decoration: none;
   font-size: 25px;
   padding-left: 2vw;
@@ -174,6 +174,7 @@ li {
 .post-top {
   display: flex;
   padding-top: 10vh;
+  padding-bottom: 10vh;
   width: 100vw;
   height: 100vh;
   flex-wrap: wrap;
@@ -319,7 +320,9 @@ Aca comienza la seccion de recomendame
   color: #070607;
   margin-top: 10vh;
 }
-
+.btn-large:hover {
+  background-color: #ee1708;
+}
 /* Aca comienza el footer */
 
 footer {
@@ -348,9 +351,6 @@ footer {
   padding-right: 20px;
 }
 
-.footer-contact {
-}
-
 .shapes-footer {
   display: flex;
 
@@ -358,15 +358,18 @@ footer {
   align-items: flex-end;
 }
 
+footer > p {
+  text-align: center;
+  margin: 0 auto;
+}
 /*aca comienza lo responsive */
 
 @media (max-width: 480px) {
 }
 
 @media (max-width: 768px) {
-  section#posts,
-  section#box {
-    padding: 20vw 10vw;
+  .box-title {
+    font-size: 3em;
   }
 
   section#post {
@@ -409,7 +412,6 @@ footer {
     left: 0;
     height: 100vh;
     width: 100vw;
-    z-index: 1;
     background: #eae6d9;
   }
 }
