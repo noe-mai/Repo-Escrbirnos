@@ -133,7 +133,7 @@ nav {
   border: 0;
   outline: 0;
   cursor: pointer;
-  color: #f3f3f3;
+  color: #9b3838;
   font-size: 20px;
   margin-right: 5vw;
   z-index: 2;
@@ -364,23 +364,31 @@ footer {
 }
 
 @media (max-width: 768px) {
-  section#entradas,
-  section#recomendame {
+  section#posts,
+  section#box {
     padding: 20vw 10vw;
   }
 
-  section#entradas {
+  section#post {
     flex-direction: column;
   }
 
+  /* oculto el menu desktop */
   ul.menu {
     display: none;
+  }
+
+  /* menu responsive */
+
+  #burger-menu-toggler {
+    display: block;
   }
 
   #close-mobile-menu {
     display: none;
   }
-
+  /* Al clickear el boton para abrir el menu mobile,
+  se agrega esta clase al body cpn JS */
   body.mobile-menu-active {
     overflow: hidden;
   }
@@ -391,7 +399,7 @@ footer {
   body.mobile-menu-active #close-mobile-menu {
     display: block;
   }
-  body.mobile-menu-active .main-menu {
+  body.mobile-menu-active .menu {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -402,5 +410,6 @@ footer {
     height: 100vh;
     width: 100vw;
     z-index: 1;
+    background: #eae6d9;
   }
 }
