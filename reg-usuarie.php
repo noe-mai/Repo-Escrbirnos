@@ -1,6 +1,6 @@
 <?php
 	$valido = true;
-	$usuario_existe = false;
+	$usuarie_existe = false;
 	$mensaje_ok = "";
 	$mensaje_error = "";
 	$reboto_pass = false;
@@ -75,8 +75,7 @@
 
 			if ($usuarie == $valor["usuarie"]){ //Si ya existe une usuarie con el nombre ingresado
 				$usuarie_existe = true;
-				$valido = false; //Para que rebote como pretendiente enamorado de histérica
-				break;
+				$valido = false;
 			}
 			$cant_campos++;
 		}
