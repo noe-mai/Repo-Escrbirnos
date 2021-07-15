@@ -1,10 +1,5 @@
 <?php require('header.php'); ?>
 
-<!--<div class="containerb">-->
-
-<!-- Slideshow container -->
-
-<br><br><br>
 
 <div class="">
   <section class="">

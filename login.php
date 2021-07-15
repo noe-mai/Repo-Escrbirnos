@@ -1,5 +1,5 @@
 
-    <?php require('header.php'); ?>
+<?php require('header.php'); ?>
 
 <div class="containerb">
 
@@ -9,11 +9,11 @@
 <!--<p class="blanco">Nombre Completo:</p>-->
 
    <div class="form-group">
-  <input class="form-control"  type="text" name="nombreusu" value="" placeholder="Usuario (obligat)">
+  <input class="form-control"  type="text" name="nombreusu" value="" placeholder="Usuarie (obligat)">
   <input class="form-control" type="email" name="email" value="" placeholder="E-mail">
   </div>
 
-  <!--<p class="blanco">Eleg� tu contrase�a</p>-->
+  
   <input class="form-control" type="password" name="pass" value=""placeholder="Ingresá tu contraseña ">
     <div class="form-check">
     <input  class="form-check-input"type="checkbox" class="form-check-input" name="recordar" value="">

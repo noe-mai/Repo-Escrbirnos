@@ -1,7 +1,7 @@
 php require('header.php'); ?>
 
 <div>
-  <a href="contacto.php" style="font-size: 20px; margin-left: 30px;">Contacto</a><br>
+  <a href="contacto.php">Contacto</a><br>
   <form method="post" action="formulario.php" >
     <p>
     <br><label for="nombre">Nombre: </label>
