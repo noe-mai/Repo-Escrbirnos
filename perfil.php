@@ -52,7 +52,7 @@ if(!isset($_SESSION["nombre"])){
 		$mensaje_error = $mensaje_error . "No se encontró usuarie😓<br>";
 	}
 } else {$sesion = true;} //Si entra en else es porque están seteadas las variables de sesión (a juzgar por $_SESSION["nombre"]). Entonces setea $sesion
-						//para que entre en la parte que "dibuja" el perfil de usuario -if($sesion)-.
+						//para que entre en la parte que "dibuja" el perfil de usuarie -if($sesion)-.
 
 if($sesion){
 	require('header.php');
@@ -63,10 +63,9 @@ if($sesion){
 
 		echo "<div class='main-profile'>
 			<br>";
-			if ($_SESSION["kind_of_user"] == "usuarie"/*$kind_of_user == "usuario"*/){
-				echo "<img class='profile-picture' height='200px' src='usuarios/"; echo $imagenUsuarie; echo "' alt='Usuario'>";
-			} else if ($_SESSION["kind_of_user"] == "prestador"/*$kind_of_user == "prestador"*/){
-				echo "<img class='profile-picture' height='200px' src='prestadores/"; echo $imagenUsuario; echo "' alt='Prestador'>";
+			if ($_SESSION["kind_of_user"] == "usuarie"/*$kind_of_user == "usuarie"*/){
+				echo "<img class='profile-picture' height='200px' src='usuaries/"; echo $imagenUsuarie; echo "' alt='Usuarie'>";
+			
 			}
 			echo "<h2 style='text-align:center;'>"; echo($_SESSION["nombre"]); echo "</h2>
 			<h3 style='text-align:center;'>";
@@ -79,7 +78,7 @@ if($sesion){
 	</div>
 	</div>";
 } else {
-		require('header2.php');
+		require('header.php');
 		echo "<body class='registro-body'>
 		<br>
 		<br>

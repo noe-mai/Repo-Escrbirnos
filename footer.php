@@ -32,11 +32,7 @@
             <p>
               Dejanos tu correo y recibis un resumen semanal con las novedades
             </p>
-            <form action="">
-              <label for="">
-                <input type="text" />
-              </label>
-            </form>
+            <p>Podés contactarnos <a href="contacto.php"> aquí </a></p>
           </div>
           <div class="shapes-footer">
             <div class="red-rectangule"></div>
@@ -46,3 +42,8 @@
         </div>
         <p>Hecho por WRITE-US con 💗 y ☕</p>
       </footer>
+
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>
