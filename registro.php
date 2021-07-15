@@ -31,13 +31,13 @@ $paises = [
 
 <div class="form">
   <form class="" action="reg-usuarie.php" method="post" enctype="multipart/form-data">
-    <!--<p class="blanco">Nombre Completo:</p>-->
+    
       <p><input class="redondeadocolor" type="text" name="nombre" value="<?php isset($_POST['$nom']) ? $_POST['$nom'] : ' ';?>" placeholder="Nombre">
       <input class="redondeadocolor" type="text" name="apellido" value="<?php isset($_POST['$apel']) ? $_POST['$apel'] : ' ';?>" placeholder="Apellido"></p>
       <br>
       <br>
      
-       <!--<p class="blanco">Elegí tu País:</p>-->
+       
       <p class="blanco">Nacionalidad</p>
       <p><select class="redondeadocolor" type="text" name="pais" value="<?= $key ?>" <?php isset($_POST['$pais']) && $_POST['$pais'] == $key ? 'selected' : ''; ?>    placeholder="Elegí un país"></p>
           <?php foreach ($paises as $key => $pais) : ?>
@@ -52,10 +52,6 @@ $paises = [
         </select>
       <br>
       <br>
-      <!--<p class="blanco">Fecha de Nacimiento:</p>-->
-      <!--<p><input class="redondeadocolor" type="text" name="fecha-nacimiento" value="" placeholder="Fecha de Nacimiento"></p>
-      <br>-->
-      <!--<p class="blanco">Completá con tu E-mail:</p>-->
       <p><input class="redondeadocolor" type="email" name="email" value="<?php isset($_POST['$email']) ? $_POST['$email'] : ' ';?>" placeholder="E-mail"></p>
       <br>
       <!--<p class="blanco">Elegí tu contraseña</p>-->
@@ -65,7 +61,7 @@ $paises = [
       <p><input class="redondeadocolor" type="password" name="rePassword" value="" placeholder="Reconfirmá tu contraseña acá"></p>
       <br>
       <br>
-	  <label for="archivo">Imagen de perfil (jpg, bmp): </label>
+	  <label for="archivo">Imagen de perfil (jpg, png): </label>
 		<input type="file" name="archivo"><br>
       <input class="boton-registro"type="submit" name="enviar" value="Registrarme">
   </form>
