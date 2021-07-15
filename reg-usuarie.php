@@ -44,6 +44,7 @@
 	$nom = $_POST["nombre"];
 	$apel = $_POST["apellido"];
 	$nombre = $nom . " " . $apel;
+	$usuarie = $_POST["nombreusu"]
 	$pais = $_POST["pais"]; 
 	$email = $_POST["email"];
 	$pass = $_POST["password"];
