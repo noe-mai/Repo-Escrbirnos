@@ -7,13 +7,17 @@
 
 	if (strlen($_POST["nombre"]) > 0){
 		$mensaje_ok = $mensaje_ok . "Nombre ok <br>";
-	} else {$mensaje_error = $mensaje_error . "No ingresó nombre <br>"; $valido = false;}
+	} else {$mensaje_error = $mensaje_error . "No ingresó nombre 🙄 <br>"; $valido = false;}
 
 	if (strlen($_POST["apellido"]) > 0){
 		$mensaje_ok = $mensaje_ok . "Apellido ok <br>";
-	} else {$mensaje_error = $mensaje_error . "No ingresó nombre <br>"; $valido = false;}
+	} else {$mensaje_error = $mensaje_error . "No ingresó nombre 🙄 <br>"; $valido = false;}
 
-//SI ESTÁ ARRIBA TIRA ERROR
+	if (strlen($_POST["nombreusu"]) >= 4){
+		$mensaje_ok = $mensaje_ok . "Usuarie ok <br>";
+	} else {$mensaje_error = $mensaje_error . "Nombre usuarie debe tener al menos 4 caracteres <br>"; $valido = false;}
+
+
 	if (strlen($_POST["pais"]) > 0){
 		$mensaje_ok = $mensaje_ok . "País ok <br>";
 	} else {$mensaje_error = $mensaje_error . "No ingresó país <br>"; $valido = false;}
@@ -22,18 +26,18 @@
 		$mensaje_ok = $mensaje_ok . "Mail ok <br>";
 	} else {$mensaje_error = $mensaje_error . "No ingresó formato de mail válido <br>"; $valido = false;}
 
-	if (strlen($_POST["password"]) >= 5 && !preg_match('/\s/',$_POST["password"]) && preg_match('/N/',$_POST["password"])){
+	if (strlen($_POST["password"]) >= 5 && !preg_match('/\s/',$_POST["password"]) && preg_match('/ALT/',$_POST["password"])){
 		$mensaje_ok = $mensaje_ok . "Pass ok <br>";
-	} else {$mensaje_error = $mensaje_error . "Pass debe tener al menos 5 caracteres, no tener espacios y debe contener 'N' <br>";
+	} else {$mensaje_error = $mensaje_error . "Pass debe tener al menos 5 caracteres, no tener espacios y debe contener 'ALT' <br>";
 			$valido = false;
 			$reboto_pass = true;
 	}
 
-	if (strlen($_POST["rePassword"]) >= 5 && !preg_match('/\s/',$_POST["rePassword"]) && preg_match('/N/',$_POST["rePassword"])){
+	if (strlen($_POST["rePassword"]) >= 5 && !preg_match('/\s/',$_POST["rePassword"]) && preg_match('/ALT/',$_POST["rePassword"])){
 		$mensaje_ok = $mensaje_ok . "Pass2 ok <br>";
 	} else {
 			if($reboto_pass == false){ //Si rebotan pass y repetición de pass, sin esta variable muestra el mensaje dos veces
-				$mensaje_error = $mensaje_error . "Pass debe tener al menos 5 caracteres, no tener espacios y debe contener 'N' <br>"; $valido = false;
+				$mensaje_error = $mensaje_error . "Pass debe tener al menos 5 caracteres, no tener espacios y debe contener 'ALT' <br>"; $valido = false;
 			}
 	}
 
@@ -69,15 +73,15 @@
 	if($json_previo){
 		foreach($previo as $valor){
 
-			if ($usuario == $valor["usuario"]){ //Si ya existe un usuario con el nombre de usuario ingresado
-				$usuario_existe = true;
+			if ($usuarie == $valor["usuarie"]){ //Si ya existe une usuarie con el nombre ingresado
+				$usuarie_existe = true;
 				$valido = false; //Para que rebote como pretendiente enamorado de histérica
 				break;
 			}
 			$cant_campos++;
 		}
 	}
-		if($usuario_existe == false){
+		if($usuarie_existe == false){
 
 			//Tratamiento de imagen de perfil
 			if($_FILES["archivo"]["error"] === UPLOAD_ERR_OK){
@@ -89,10 +93,9 @@
 				//echo "La extensión es: " . $ext . "<br>";
 
 				$miArchivo = dirname(__FILE__);
-				$miArchivo = $miArchivo. "\\". "usuarios" . "\\" .$usuario. ".".$ext; //El nombre de la foto es el nombre del usuario. Hay que crear el directorio.
-
+				$miArchivo = $miArchivo. "\\". "usuaries" . "\\" .$usuarie. ".".$ext; 
 				//echo "miArchivo es: " . $miArchivo . "<br>";
-				if($ext=="jpg" || $ext=="bmp"){
+				if($ext=="jpg" || $ext=="png"){
 					move_uploaded_file($archivo, $miArchivo);
 				} else {
 					$mensaje_error = $mensaje_error . "Formato de imagen incorrecto<br>";
@@ -104,25 +107,24 @@
 				$valido = false;
 			}
 
-			//Fin tratamiento imagen de perfil
+			//Fin  imagen de perfil
 
 			if($valido){
-				$campo_usuario = [
+				$campo_usuarie = [
 					"nombre" => $nombre,
-					"usuario" => $usuario,
+					"usuarie" => $usuarie,
 					"pais" => $pais,
 					"email" => $email,
 					"hash" => $hash,
 					"ext" => $ext
 				];
-				$previo[$cant_campos] = $campo_usuario; //Agrego el nuevo usuario al JSON
+				$previo[$cant_campos] = $campo_usuarie; //Agrego el nuevo usuario al JSON
 				$json = json_encode($previo); //Vuelvo a codificar a JSON
-				file_put_contents("usuaries.json", $json); //Escribo todo (con el agregado) en el archivo, pisando lo anterior
-				//echo "Usuario agregado<br>";
+				file_put_contents("usuaries.json", $json); 
 			}
 
 		} else {
-			$mensaje_error = $mensaje_error . "Ese usuario ya existe<br>";
+			$mensaje_error = $mensaje_error . "Ese usuarie ya existe<br>";
 		}
 	}
 ?>
@@ -143,7 +145,7 @@
 
 
 	<?php if($valido){
-		echo "<p><h3 class='registro'>Usuario registrado exitosamente</h3></p>";
+		echo "<p><h3 class='registro'>Usuarie registrade exitosamente</h3></p>";
 		echo "<p><h3 class='registro'>Felicidades, "; echo($nombre); echo "</h3></p>";
 	} else {
 		echo "<p><h3 class='registro'> Error <br> "; echo($mensaje_error); echo "</h3></p>";

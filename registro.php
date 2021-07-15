@@ -36,7 +36,8 @@ $paises = [
       <input class="redondeadocolor" type="text" name="apellido" value="<?php isset($_POST['$apel']) ? $_POST['$apel'] : ' ';?>" placeholder="Apellido"></p>
       <br>
       <br>
-     
+      <p><input class="redondeadocolor" type="text" name="nombreusu" value="<?php isset($_POST['$nombreusu']) ? $_POST['$nombreusu'] : ' ';?>" placeholder="Nombre de Usuarie"></p>
+      <br>
        
       <p class="blanco">Nacionalidad</p>
       <p><select class="redondeadocolor" type="text" name="pais" value="<?= $key ?>" <?php isset($_POST['$pais']) && $_POST['$pais'] == $key ? 'selected' : ''; ?>    placeholder="Elegí un país"></p>
@@ -61,7 +62,7 @@ $paises = [
       <p><input class="redondeadocolor" type="password" name="rePassword" value="" placeholder="Reconfirmá tu contraseña acá"></p>
       <br>
       <br>
-	  <label for="archivo">Imagen de perfil (jpg, png): </label>
+	  <label for="archivo">Imagen de perfil (jpg): </label>
 		<input type="file" name="archivo"><br>
       <input class="boton-registro"type="submit" name="enviar" value="Registrarme">
   </form>

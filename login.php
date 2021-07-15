@@ -1,12 +1,12 @@
 
 <?php require('header.php'); ?>
 
-<div class="containerb">
+<div class="container">
 
   <h1>Entrá y publica tus escritos 🌈</h1>
 
 <form class="" action="perfil.php" method="post">
-<!--<p class="blanco">Nombre Completo:</p>-->
+
 
    <div class="form-group">
   <input class="form-control"  type="text" name="nombreusu" value="" placeholder="Usuarie (obligat)">
@@ -19,7 +19,7 @@
     <input  class="form-check-input"type="checkbox" class="form-check-input" name="recordar" value="">
     <label for="recordar" class="form-check-label">Recordarme?</label>
     </div>
- <input class= "btn btn-success" type="submit" name="enviar" value="Ingresar como usuario">
+ <input class= "btn btn-success" type="submit" name="enviar" value="Ingresar🚀">
  </form>
  </div>
 
