@@ -13,9 +13,9 @@
 	//Agrego campo de array al array obtenido del json
 	
 	foreach($previo as $valor){
-		if ($usuarie == $valor["usuarie"]){ //Si ya existe un usuario con el nombre de usuario ingresado
+		if ($usuarie == $valor["usuarie"]){ //Si ya existe une usuarie con el nombre de usuarie ingresado
 			echo "Usuarie encontrado<br>";
-			$hash = $valor["hash"]; //Levanto el hash para el usuario en cuestión del array que se levantó del JSON
+			$hash = $valor["hash"]; 
 			if(password_verify($pass, $hash)){
 				echo "Inicio de sesión<br>";
 				$usuarie_encontrado = true;

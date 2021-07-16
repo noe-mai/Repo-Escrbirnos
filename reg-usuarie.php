@@ -44,7 +44,7 @@
 	$nom = $_POST["nombre"];
 	$apel = $_POST["apellido"];
 	$nombre = $nom . " " . $apel;
-	$usuarie = $_POST["nombreusu"]
+	$usuarie = $_POST["nombreusu"];
 	$pais = $_POST["pais"]; 
 	$email = $_POST["email"];
 	$pass = $_POST["password"];
@@ -83,14 +83,14 @@
 	}
 		if($usuarie_existe == false){
 
-			//Tratamiento de imagen de perfil
+			//Imagen de perfil
 			if($_FILES["archivo"]["error"] === UPLOAD_ERR_OK){
 				//echo "UPLOAD_ERR_OK";
 				$nombre_ar = $_FILES["archivo"]["name"];
 				$archivo = $_FILES["archivo"]["tmp_name"];
 				$ext = pathinfo($nombre_ar, PATHINFO_EXTENSION);
 
-				//echo "La extensión es: " . $ext . "<br>";
+			
 
 				$miArchivo = dirname(__FILE__);
 				$miArchivo = $miArchivo. "\\". "usuaries" . "\\" .$usuarie. ".".$ext; 
@@ -118,7 +118,7 @@
 					"hash" => $hash,
 					"ext" => $ext
 				];
-				$previo[$cant_campos] = $campo_usuarie; //Agrego el nuevo usuario al JSON
+				$previo[$cant_campos] = $campo_usuarie; //Agrego el nuevo usuarie al JSON
 				$json = json_encode($previo); //Vuelvo a codificar a JSON
 				file_put_contents("usuaries.json", $json); 
 			}
