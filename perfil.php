@@ -14,7 +14,6 @@ if(!isset($_SESSION["nombre"])){
 	$tipo_usuarie = $_POST["enviar"];
 	$kind_of_user = "";
 	
-
 	if($tipo_usuarie == "Ingreso de usuarie")
 	{
 		$json_previo = file_get_contents("usuaries.json"); //Tomo el contenido del JSON de usuaries
@@ -24,8 +23,8 @@ if(!isset($_SESSION["nombre"])){
 	
 	else {$mensaje_error = $mensaje_error . "No se identificó usuarie <br>";}
 
-
 	$previo = json_decode($json_previo, true); 
+	$json_previo = file_get_contents("usuaries.json");
 
 	foreach($previo as $valor){
 		if ($usuarie == $valor["usuarie"]){ //Si ya existe un usuarie con el nombre de usuarie ingresado
@@ -65,7 +64,7 @@ if($sesion){
 		 $imagenUsuarie = $_SESSION["usuarie"].".".$extension;
 	
 
-		echo "<div class='main-profile'>";
+		echo "<div class=''>";
 			if ($_SESSION["kind_of_user"] == "usuarie"/*$kind_of_user == "usuarie"*/){
 				echo "<img class='profile-picture' height='200px' src='usuaries/"; echo $imagenUsuarie; echo "' alt='Usuarie'>";
 			
@@ -84,5 +83,7 @@ if($sesion){
 	
   }
 
-<?php require('footer.php');
+  require('footer.php');
+
+?>
 

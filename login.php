@@ -19,7 +19,7 @@
     <input  class="form-check-input"type="checkbox" class="form-check-input" name="recordar" value="">
     <label for="recordar" class="form-check-label">Recordarme?</label>
     </div>
- <input class= "btn btn-success" type="submit" name="enviar" value="Ingresar🚀">
+ <input class= "btn-log" type="submit" name="enviar" value="Ingresar🚀">
  </form>
  </div>
 

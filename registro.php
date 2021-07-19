@@ -19,12 +19,7 @@ $paises = [
   <body class="registro-body">
     <?php require('header.php'); ?>
 
-    <br>
-    <br>
-
     <p><h3 class="registro">Registrate acá 👽</h3></p>
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -39,7 +34,7 @@ $paises = [
       <p><input class="redondeadocolor" type="text" name="nombreusu" value="<?php isset($_POST['$nombreusu']) ? $_POST['$nombreusu'] : ' ';?>" placeholder="Nombre de Usuarie"></p>
       <br>
        
-      <p class="blanco">Nacionalidad</p>
+      <p class="">Nacionalidad</p>
       <p><select class="redondeadocolor" type="text" name="pais" value="<?= $key ?>" <?php isset($_POST['$pais']) && $_POST['$pais'] == $key ? 'selected' : ''; ?>    placeholder="Elegí un país"></p>
           <?php foreach ($paises as $key => $pais) : ?>
             <?php if($_GET['paises'] == $key) : ?>

@@ -62,6 +62,7 @@
 
 	if($json_previo){	
 		$previo = json_decode($json_previo, true); 
+	}
 	//Creación de array asociativo de usuariE
 	if($valido){ //Si no falló ninguna de las validaciones del nuevo usuarie
 
@@ -74,8 +75,10 @@
 
 			if ($usuarie == $valor["usuarie"]){ //Si ya existe une usuarie con el nombre ingresado
 				$usuarie_existe = true;
-				$valido = false;
+				
+				break;
 			}
+
 			$cant_campos++;
 		}
 	}
