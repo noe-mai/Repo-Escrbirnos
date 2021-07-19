@@ -28,7 +28,7 @@
 				$nombre = "Hola " . $_SESSION["usuarie"];
 				echo $nombre;
 				//var_dump($_SESSION["nombre"]); echo "<br>";
-				//var_dump($_SESSION["usuario"]); echo "<br>";
+				//var_dump($_SESSION["usuaries"]); echo "<br>";
 				//var_dump($_SESSION["pais"]); echo "<br>";
 				//var_dump($_SESSION["email"]); echo "<br>";
 			} else {
@@ -39,7 +39,7 @@
 		}
 	}
 	if($usuarie_encontrado == false){
-		echo "No se encontró usuario<br>";
+		echo "No se encontró usuarie<br>";
 	}
 ?>
 

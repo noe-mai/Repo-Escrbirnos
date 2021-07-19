@@ -8,7 +8,7 @@
 <form class="" action="perfil.php" method="post">
 
 
-   <div class="form-group">
+   <div class="form">
   <input class="form-control"  type="text" name="nombreusu" value="" placeholder="Usuarie (obligat)">
   <input class="form-control" type="email" name="email" value="" placeholder="E-mail">
   </div>

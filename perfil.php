@@ -70,8 +70,8 @@ if($sesion){
 				echo "<img class='profile-picture' height='200px' src='usuaries/"; echo $imagenUsuarie; echo "' alt='Usuarie'>";
 			
 			}
-			echo "<h2 style='text-align:center;'>"; echo($_SESSION["nombre"]); echo "</h2>";
-			"<h3 style='text-align:center;'>";
+			echo "<h2>"; echo($_SESSION["nombre"]); echo "</h2>";
+			"<h3>";
 			echo ($_SESSION["nombre"]); echo "<br>";
 			echo ($_SESSION["usuarie"]); echo "<br>";
 			echo ($_SESSION["pais"]); echo "<br>";
@@ -84,4 +84,5 @@ if($sesion){
 	
   }
 
-<?php require('footer.php'); ?>
+<?php require('footer.php');
+

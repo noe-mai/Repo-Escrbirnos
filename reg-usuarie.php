@@ -60,11 +60,9 @@
 
 	$json_previo = file_get_contents("usuaries.json"); //Tomo el contenido del JSON
 
-	if($json_previo){	//Si hay al menos un usuario
-		$previo = json_decode($json_previo, true); //Paso de JSON a array asociativo. Hay que ponerle true para que devuelva arrays asoc y no objetos
-	}
-
-	//Creación de array asociativo de usuario
+	if($json_previo){	
+		$previo = json_decode($json_previo, true); 
+	//Creación de array asociativo de usuariE
 	if($valido){ //Si no falló ninguna de las validaciones del nuevo usuarie
 
 		//Agrego campo de array al array obtenido del json
@@ -89,9 +87,6 @@
 				$nombre_ar = $_FILES["archivo"]["name"];
 				$archivo = $_FILES["archivo"]["tmp_name"];
 				$ext = pathinfo($nombre_ar, PATHINFO_EXTENSION);
-
-			
-
 				$miArchivo = dirname(__FILE__);
 				$miArchivo = $miArchivo. "\\". "usuaries" . "\\" .$usuarie. ".".$ext; 
 				//echo "miArchivo es: " . $miArchivo . "<br>";
@@ -101,7 +96,6 @@
 					$mensaje_error = $mensaje_error . "Formato de imagen incorrecto<br>";
 					$valido = false;
 				}
-
 			} else {
 				$mensaje_error = $mensaje_error . "Error carga foto de perfil<br>";
 				$valido = false;
@@ -136,13 +130,8 @@
     <link rel="stylesheet" href="styles.css">
     <title>Registro</title>
   </head>
-  <body class="registro-body">
+  <body class="">
     <?php require('header.php'); ?>
-
-    <br>
-    <br>
-
-
 
 	<?php if($valido){
 		echo "<p><h3 class='registro'>Usuarie registrade exitosamente</h3></p>";
