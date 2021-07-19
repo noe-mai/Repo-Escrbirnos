@@ -21,17 +21,18 @@ if(!isset($_SESSION["nombre"])){
 		$_SESSION["kind_of_user"] = "usuarie";
 	} 
 	
-	else {$mensaje_error = $mensaje_error . "No se identificó usuarie <br>";}
+	else {$mensaje_error = $mensaje_error . "No se identificó usuarie 🙈 <br>";}
 
-	$previo = json_decode($json_previo, true); 
 	$json_previo = file_get_contents("usuaries.json");
-
-	foreach($previo as $valor){
-		if ($usuarie == $valor["usuarie"]){ //Si ya existe un usuarie con el nombre de usuarie ingresado
+	$previo = json_decode($json_previo, true); 
+	foreach($previo as $valor)
+	{
+		if ($usuarie == $valor["usuarie"])
+		{ //Si ya existe un usuarie con el nombre de usuarie ingresado
 			$mensaje_ok = $mensaje_ok . "Usuarie encontrado<br>";
 			$hash = $valor["hash"]; 
 			if(password_verify($pass, $hash)){
-				$mensaje_ok = $mensaje_ok . "Inicio de sesión<br>";
+				$mensaje_ok = $mensaje_ok . "Inicio de sesión 🛸 <br>";
 				$usuarie_encontrado = true;
 				$sesion = true;
 				//session_start();
