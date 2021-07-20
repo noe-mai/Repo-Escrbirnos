@@ -25,6 +25,7 @@ if(!isset($_SESSION["nombre"])){
 
 	$json_previo = file_get_contents("usuaries.json");
 	$previo = json_decode($json_previo, true); 
+	
 	foreach($previo as $valor)
 	{
 		if ($usuarie == $valor["usuarie"])

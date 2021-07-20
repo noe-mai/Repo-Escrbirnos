@@ -19,13 +19,13 @@ if(isset($_SESSION["usuarie"])){
 }
 ?>
 
-<div class="containerb">
+<div class="container">
 	<section class="registration-landing">
 		<img class="section-image" src="images/login.jpg" alt="Pagina de Login">
 		<h1>Login</h1>
 		<p>Comparti tus escritos🍕🔺🏳‍🌈👩‍💻💬☕</p>
 
-		<div class="button-group">
+		<div class="">
 			<a href="login.php" class="">Entrar</a>
 		</div>
 	</section>
