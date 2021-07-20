@@ -10,11 +10,7 @@ if(isset($_SESSION["usuarie"])){
 		unset($_SESSION["pais"]);
 		unset($_SESSION["email"]);
 		session_destroy();
-		//var_dump($_SESSION["nombre"]); echo "<br>";
-		//var_dump($_SESSION["usuarie"]); echo "<br>";
-		//var_dump($_SESSION["pais"]); echo "<br>";
-		//var_dump($_SESSION["email"]); echo "<br>";
-		//echo "Sesión cerrada";
+
 	}
 }
 ?>

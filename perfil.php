@@ -25,11 +25,11 @@ if(!isset($_SESSION["nombre"])){
 
 	$json_previo = file_get_contents("usuaries.json");
 	$previo = json_decode($json_previo, true); 
-	
+
 	foreach($previo as $valor)
 	{
 		if ($usuarie == $valor["usuarie"])
-		{ //Si ya existe un usuarie con el nombre de usuarie ingresado
+		{ 
 			$mensaje_ok = $mensaje_ok . "Usuarie encontrado<br>";
 			$hash = $valor["hash"]; 
 			if(password_verify($pass, $hash)){

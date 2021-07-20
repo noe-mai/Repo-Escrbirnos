@@ -50,10 +50,10 @@ $paises = [
       <br>
       <p><input class="redondeadocolor" type="email" name="email" value="<?php isset($_POST['$email']) ? $_POST['$email'] : ' ';?>" placeholder="E-mail"></p>
       <br>
-      <!--<p class="blanco">Elegí tu contraseña</p>-->
+     
       <p><input class="redondeadocolor" type="password" name="password" value=""placeholder="Elegí tu contraseña "></p>
       <br>
-      <!--<p class="blanco">Confirmá la contraseña, por favor</p>-->
+      
       <p><input class="redondeadocolor" type="password" name="rePassword" value="" placeholder="Reconfirmá tu contraseña acá"></p>
       <br>
       <br>
